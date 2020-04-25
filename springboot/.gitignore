@@ -1,0 +1,25 @@
+##ignore this file##
+target/ 
+classes/
+.classpath
+.project
+.settings      
+##class file##
+*.com  
+*.class  
+*.dll  
+*.exe  
+# compression file
+*.7z  
+*.dmg  
+*.gz  
+*.iso  
+*.jar  
+*.rar  
+*.tar  
+*.zip  
+*.via
+*.tmp
+*.err
+.idea
+*.iml
