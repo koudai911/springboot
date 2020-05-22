@@ -1,0 +1,17 @@
+server:
+  port: 6010
+
+
+spring:
+  redis:
+    host: ${REDIS_HOST:129.28.152.26}
+    port: ${REDIS_PORT:6379}
+    database: 1
+    password: ${REDIS_PASSWORD:123456}
+    timeout: 6000
+    ssl: false
+    pool:
+    max-active: 200
+    max-wait: -1
+    max-idle: 10
+    min-idle: 0
