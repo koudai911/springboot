@@ -4,7 +4,7 @@ server:
 
 spring:
   redis:
-    host: ${REDIS_HOST:129.28.152.26}
+    host: ${REDIS_HOST:47.100.90.214}
     port: ${REDIS_PORT:6379}
     database: 1
     password: ${REDIS_PASSWORD:123456}

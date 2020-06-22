@@ -1,9 +1,6 @@
-package com.study.verifydemo.filter;
+package com.study.verifydemo.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @Author luoshangcai
@@ -15,5 +12,14 @@ import java.lang.annotation.Target;
  **/
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface ApiIdempotent {
+    /**
+     * 是否创建新的token
+     */
+    boolean generateToken() default false;
+    /**
+     * 是否移除token
+     */
+    boolean removeToken() default false;
 }

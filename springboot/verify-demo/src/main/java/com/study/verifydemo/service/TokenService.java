@@ -8,5 +8,5 @@ public interface TokenService {
     ResultMsg createToken(User user);
 
 
-    ResultMsg checkToken(String token,String name);
+    ResultMsg checkToken(String token);
 }

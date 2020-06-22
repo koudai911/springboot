@@ -37,18 +37,19 @@ public class TokenServiceImpls implements TokenService {
     }
 
     @Override
-    public ResultMsg checkToken(String token,String name) {
+    public ResultMsg checkToken(String token) {
         // header中不存在token
-        if (StringUtils.isBlank(token) || StringUtils.isBlank(name)) {
+        if (StringUtils.isBlank(token)) {
             return new ResultMsg(40010,"参数不合法，必须带token参数",null);
         }
-        if (!redisUtils.exists(name)) {
-            return new ResultMsg(40010,"无效的token",null);
+        if (!redisUtils.exists(token)) {
+            return new ResultMsg(40010,"请不要重复提交",null);
         }
         Collection<String> keys =new ArrayList();
-        keys.add(name);
+        keys.add(token);
         Long del=redisUtils.delete(keys);
         if(del<1){
+            //redis 单线程 并发下防止重复提交
             return new ResultMsg(40010,"请勿重复操作",null);
         }
         return new ResultMsg(ResultStatusCode.OK,"检验token成功");
