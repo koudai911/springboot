@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.study.cache.config.CodeFocusRedisConfig
+
+
+
+
+

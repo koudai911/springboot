@@ -2,6 +2,8 @@ package com.study.verifydemo.aspect;
 
 import com.study.verifydemo.annotation.CacheLock;
 import com.study.verifydemo.exception.ServiceException;
+import com.study.verifydemo.filter.TenantFilter;
+import com.study.verifydemo.utils.ThreadLocalMapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -39,8 +41,8 @@ public class LockCheckAspect {
     @Around("pointCut()")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable{
 
-        // 可以根据业务获取用户唯一的个人信息，例如手机号码
-        String phone = joinPoint.getArgs()[0].toString();
+        // 可以根据业务获取用户唯一的个人信息，
+        String tenantId = ThreadLocalMapUtils.get(TenantFilter.TENANT_KEY).toString();
 
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
@@ -52,7 +54,7 @@ public class LockCheckAspect {
         // 拼接 key
         String delimiter = cacheLock.delimiter();
         StringBuilder sb = new StringBuilder();
-        sb.append(prefix).append(delimiter).append(phone);
+        sb.append(prefix).append(delimiter).append(tenantId);
         final String lockKey = sb.toString();
         final String UUID = java.util.UUID.randomUUID().toString();
         try {

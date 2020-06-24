@@ -20,6 +20,7 @@
             <module>elasticjob</module>
             <module>canal</module>
             <module>verify-demo</module>
+            <module>cache</module>
       </modules>
 
     <dependencies>
