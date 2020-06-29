@@ -44,9 +44,11 @@ public class AccessSpeedLimit {
             keys.add(newKey);
             RedisScript<Number> redisScript = new DefaultRedisScript<>(buildLuaScript(), Number.class);
             Number execute = redisTemplate.execute(redisScript, keys, limitRule.getLimitCount(), limitRule.getSeconds());
+            log.info("服务限流：execute:{};intValue:{};LimitCount:{}",execute,execute.intValue(),limitRule.getLimitCount());
             if(execute!=null && execute.intValue() <= limitRule.getLimitCount()){
                 return true;
             }
+            log.error("execute:{};intValue:{};LimitCount:{}",execute,execute.intValue(),limitRule.getLimitCount());
         }catch (Exception e){
             log.error("key:{};msg:{}",key,e.getMessage());
         }

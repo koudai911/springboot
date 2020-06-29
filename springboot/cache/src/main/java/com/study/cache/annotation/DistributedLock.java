@@ -23,8 +23,14 @@ public @interface DistributedLock {
 
     String field() default "";
 
+    /**
+     *  过期时间
+     */
     int expire() default 5000;
 
+    /**
+     *  超时时间
+     */
     int timeOut() default 3000;
 }
 /*

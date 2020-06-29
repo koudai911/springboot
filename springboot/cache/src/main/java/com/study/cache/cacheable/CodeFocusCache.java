@@ -198,6 +198,7 @@ public class CodeFocusCache extends AbstractValueAdaptingCache {
 		try {
 			str = objectMapper.writeValueAsString(cacheMessage);
 
+			//发布消息
 			redisHandler.convertAndSend(topic,str);
 		} catch (JsonProcessingException e) {
 			log.error(e.getMessage());

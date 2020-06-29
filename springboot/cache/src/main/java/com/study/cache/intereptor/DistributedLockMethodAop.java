@@ -69,11 +69,12 @@ public class DistributedLockMethodAop {
                 lockName = getLockName(distributedLock) + pjp.getSignature().getDeclaringTypeName() + "." + pjp.getSignature().getName();
                 RedisReentrantLock lock = new RedisReentrantLock(limitRedisTemplate, lockName, distributedLock.expire());
                 try {
-                    if (lock.tryLock(CONNECTION_TIMEOUT, TimeUnit.MILLISECONDS)) {
+                    if (lock.tryLock(distributedLock.timeOut(), TimeUnit.MILLISECONDS)) {
                         log.debug("获取分布式锁:{}", lockName);
                         retVal = pjp.proceed();
+
                     } else {
-                        log.debug("获取分布式锁超时,锁已被占用:{}", lockName);
+                        log.error("获取分布式锁超时,锁已被占用:{}", lockName);
                         throw new Exception("该方法正在执行,请勿重复操作");
                     }
                 } catch (Exception e) {

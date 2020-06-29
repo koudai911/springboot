@@ -17,9 +17,12 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author  jackl
- * @since 1.0
- */
+ * @Author luoshangcai
+ * @Description //TODO 本地一级缓存
+ * @Date 10:28 2020-06-29
+ * @Param 
+ * @return 
+ **/
 @Slf4j
 public class CodeFocusCacheManager implements CacheManager {
 

@@ -7,9 +7,13 @@ import org.springframework.data.redis.connection.MessageListener;
 
 
 /**
- * @author  jackl
- * @since 1.0
- */
+ * @Author luoshangcai
+ * @Description //TODO reids二级缓存
+ * 				redis订阅收到的信息
+ * @Date 10:53 2020-06-29
+ * @Param 
+ * @return 
+ **/
 @Slf4j
 public class CacheMessageListener implements MessageListener {
 
@@ -28,6 +32,7 @@ public class CacheMessageListener implements MessageListener {
 			ObjectMapper objectMapper=new ObjectMapper();
 			CacheMessage cacheMessage = objectMapper.readValue(itemValue ,CacheMessage.class);
 			log.debug("onMessage:{};cacheName:{}",itemValue,cacheMessage.getCacheName());
+			// 清除本地缓存
 			codeFocusCacheManager.clearLocal(cacheMessage.getCacheName(), cacheMessage.getKey());
 		} catch (Exception e) {
 			e.printStackTrace();

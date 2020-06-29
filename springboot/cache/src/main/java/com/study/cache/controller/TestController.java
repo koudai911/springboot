@@ -37,13 +37,13 @@ public class TestController {
     }
     /**
      * @Description //TODO  分布式方法锁
-     *                  方法限流 限制  1秒只能调用100次
+     *                  方法限流 限制  2秒只能调用2000次 设置的值应小于服务限流
      * @Param []
      * @return java.lang.String
      **/
     @RequestMapping("/cache/check")
-    @DistributedLock(lock=LockType.METHOD)
-    @RequestLimit(limit = 2000,period =60 )
+    @DistributedLock(lock=LockType.METHOD,timeOut = 15000)
+    @RequestLimit(limit = 180,period =1 )
     public String cacheCheck(String id){
         List<String> checkList = testService.cacheCheck(id);
         return JSON.toJSONString(checkList);

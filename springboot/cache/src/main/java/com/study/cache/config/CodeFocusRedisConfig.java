@@ -107,13 +107,20 @@ public class CodeFocusRedisConfig extends CachingConfigurerSupport implements We
     }
 
 
+    /**
+     * @Description //TODO  redis 消息监听
+     * @Param [redisHandler, codeFocusCacheManager]
+     * @return org.springframework.data.redis.listener.RedisMessageListenerContainer
+     **/
     @Bean
     public RedisMessageListenerContainer redisMessageListenerContainer(RedisHandler redisHandler,
                                                                        CodeFocusCacheManager codeFocusCacheManager) {
         RedisMessageListenerContainer redisMessageListenerContainer = new RedisMessageListenerContainer();
         redisMessageListenerContainer.setConnectionFactory(redisHandler.getConnectionFactory());
         CacheMessageListener cacheMessageListener = new CacheMessageListener(codeFocusCacheManager);
+        //订阅一个信道
         redisMessageListenerContainer.addMessageListener(cacheMessageListener, new ChannelTopic(codeFocusRedisProperties.getCacheConfig().getCacheBaseName()));
+        //这个container 可以添加多个 messageListener
         return redisMessageListenerContainer;
     }
 

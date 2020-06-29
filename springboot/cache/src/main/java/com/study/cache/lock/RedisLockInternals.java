@@ -70,28 +70,18 @@ class RedisLockInternals {
         try {
             String value = key + randomId(1);
             //组装lua脚本参数
-//            List<String> keys = Arrays.asList(key);
+            List<String> keys = Arrays.asList(key);
             //执行脚本
-            Boolean isHavaKey = redisTemplate.hasKey(key);
-            log.debug("createRedisKey:{};value:{}",key,value);
-            if(!isHavaKey){
-                redisTemplate.opsForValue().set(key, value, lockTimeout, TimeUnit.SECONDS);
-            }else{
-//                throw new ServiceException("请勿重复提交");
-                return null;
-            }
-
-//            Object result = redisTemplate.execute(LOCK_LUA_SCRIPT, keys,value,lockTimeout);
-//            log.debug("createRedisKey:{};value:{};result:{}",key,value,result);
-
+            Object result = redisTemplate.execute(LOCK_LUA_SCRIPT, keys,value,lockTimeout);
+            log.debug("createRedisKey:{};value:{};result:{}",key,value,result);
             //存储本地变量
-//            if(LOCK_SUCCESS.equals(result)) {
+            if(LOCK_SUCCESS.equals(result)) {
                 return value;
-//            }
+            }
         }catch (Exception e){
             log.error("createRedisKey key:{};msg:{}",key,e.getMessage());
-            return null;
         }
+        return null;
     }
 
     void unlockRedisLock(String key, String value) {
