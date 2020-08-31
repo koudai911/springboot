@@ -1,9 +1,9 @@
 package com.study.verifydemo.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.study.base.common.Constant;
+import com.study.base.common.ResultMsg;
 import com.study.verifydemo.annotation.ApiIdempotent;
-import com.study.verifydemo.common.Constant;
-import com.study.verifydemo.common.ResultMsg;
 import com.study.verifydemo.service.TokenService;
 import com.study.verifydemo.utils.RedisUtils;
 import lombok.extern.slf4j.Slf4j;

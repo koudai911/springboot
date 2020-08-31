@@ -1,8 +1,8 @@
 package com.study.verifydemo.service.impl;
 
-import com.study.verifydemo.common.Constant;
-import com.study.verifydemo.common.ResultMsg;
-import com.study.verifydemo.common.ResultStatusCode;
+import com.study.base.common.Constant;
+import com.study.base.common.ResultMsg;
+import com.study.base.common.ResultStatusCode;
 import com.study.verifydemo.model.User;
 import com.study.verifydemo.service.TokenService;
 import com.study.verifydemo.utils.JwtUtil;

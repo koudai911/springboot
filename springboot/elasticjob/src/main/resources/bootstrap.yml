@@ -1,0 +1,23 @@
+server:
+  port: 6010
+
+
+# mysql 数据库
+database:
+  name: elastic
+
+spring:
+  servlet:
+    multipart:
+      max-request-size: 2024MB
+      max-file-size: 10MB
+  application:
+    name: elastic
+
+  cloud:
+    config:
+      uri:  http://${CLOUD_CONFIG_INSTANCE:localhost}:9998
+      profile: ${CLOUD_CONFIG_PROFILE:dev}
+      name: common, database, mybatis-plus
+      fail-fast: true   #失败快速响应
+

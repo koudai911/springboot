@@ -1,9 +1,9 @@
 package com.study.verifydemo.controller;
 
+import com.study.base.common.ResultMsg;
+import com.study.base.common.ResultStatusCode;
 import com.study.verifydemo.annotation.ApiIdempotent;
 import com.study.verifydemo.annotation.CacheLock;
-import com.study.verifydemo.common.ResultMsg;
-import com.study.verifydemo.common.ResultStatusCode;
 import com.study.verifydemo.service.TokenService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -39,7 +39,7 @@ public class LoginController {
 
     @PostMapping("/login")
     @ApiIdempotent(generateToken=true)
-    public ResultMsg login (String loginName,String passWord){
+    public ResultMsg login (String loginName, String passWord){
         if(StringUtils.isBlank(loginName) || StringUtils.isBlank(passWord)){
             return new ResultMsg(ResultStatusCode.NO_DATA,null);
         }
@@ -84,4 +84,18 @@ public class LoginController {
         }
         return new ResultMsg(ResultStatusCode.SYSTEM_ERR,"新增失败");
     }
+
+    /**
+     * @Description //TODO  分布式方法锁
+     *                  方法限流 限制  1秒只能调用180次 设置的值应小于服务限流
+     * @Param []
+     * @return java.lang.String
+     **/
+//    @RequestMapping("/cache/check")
+//    @DistributedLock(lock= LockType.METHOD,timeOut = 15000)
+//    @RequestLimit(limit = 180,period =1 )
+//    public String cacheCheck(int id){
+//        ids.add(id);
+//        return JSON.toJSONString(ids);
+//    }
 }

@@ -1,6 +1,8 @@
 package com.study.verifydemo.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
@@ -11,6 +13,8 @@ import lombok.Data;
  * @return 
  **/
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     /**
@@ -21,12 +25,4 @@ public class User {
      * 密码
      */
     private String password;
-
-    public User(){
-        super();
-    }
-    public User(String name,String password){
-        this.name=name;
-        this.password=password;
-    }
 }

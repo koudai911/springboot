@@ -6,13 +6,13 @@ import java.lang.annotation.*;
  * @Author luoshangcai
  * @Description //TODO 分布式锁开关
  * @Date 10:17 2020-06-24
- * @Param 
- * @return 
- **/
-@Target({ElementType.METHOD})
-@Retention(RetentionPolicy.RUNTIME)
-@Documented
-public @interface DistributedLock {
+            * @Param
+ * @return
+         **/
+    @Target({ElementType.METHOD})
+    @Retention(RetentionPolicy.RUNTIME)
+    @Documented
+    public @interface DistributedLock {
 
     /**
      * 分布式锁开关:true=开启;false=关闭

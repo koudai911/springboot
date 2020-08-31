@@ -1,8 +1,8 @@
 package com.study.cache.intereptor;
 
+import com.study.base.util.IpUtils;
 import com.study.cache.limit.AccessSpeedLimit;
 import com.study.cache.properties.CodeFocusRedisProperties;
-import com.study.cache.util.IpUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

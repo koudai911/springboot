@@ -1,9 +1,9 @@
 package com.study.verifydemo.aspect;
 
+import com.study.base.exception.CommonException;
+import com.study.base.util.ThreadLocalMapUtils;
 import com.study.verifydemo.annotation.CacheLock;
-import com.study.verifydemo.exception.ServiceException;
 import com.study.verifydemo.filter.TenantFilter;
-import com.study.verifydemo.utils.ThreadLocalMapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -49,7 +49,7 @@ public class LockCheckAspect {
         CacheLock cacheLock = method.getAnnotation(CacheLock.class);
         String prefix = cacheLock.prefix();
         if (StringUtils.isBlank(prefix)){
-            throw new ServiceException("CacheLock prefix can't be null");
+            throw new CommonException("CacheLock prefix can't be null");
         }
         // 拼接 key
         String delimiter = cacheLock.delimiter();
@@ -65,7 +65,7 @@ public class LockCheckAspect {
             if(!isHavaKey){
                 redisTemplate.opsForValue().set(lockKey, UUID, cacheLock.expire(), cacheLock.timeUnit());
             }else{
-                throw new ServiceException("请勿重复提交");
+                throw new CommonException("请勿重复提交");
             }
             Object result= joinPoint.proceed();
             return result;

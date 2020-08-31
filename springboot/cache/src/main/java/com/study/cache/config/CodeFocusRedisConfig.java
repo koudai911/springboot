@@ -75,6 +75,7 @@ public class CodeFocusRedisConfig extends CachingConfigurerSupport implements We
      * 由于reposotory上不能直接使用spel表达式作key，故而采用key的生成策略的方式来替换
      *
      * 使用时在注解@Cacheable(value = "cacheCheck",keyGenerator = "firstParamKeyGenerator")中指定
+     *  keyGenerator 下面是全名
      * @return
      */
     @Bean(name = "firstParamKeyGenerator")
@@ -86,6 +87,22 @@ public class CodeFocusRedisConfig extends CachingConfigurerSupport implements We
                 sb.append(params[0].toString());
                 return sb.toString();
             }
+        };
+    }
+
+    @Bean
+    @Override
+    public KeyGenerator keyGenerator() {
+        return (target, method, params) -> {
+            StringBuilder sb = new StringBuilder();
+            sb.append(target.getClass().getName());
+            sb.append(method.getName());
+            for (Object obj : params) {
+                if (obj != null) {
+                    sb.append(obj.toString().hashCode());
+                }
+            }
+            return sb.toString();
         };
     }
 
@@ -124,21 +141,7 @@ public class CodeFocusRedisConfig extends CachingConfigurerSupport implements We
         return redisMessageListenerContainer;
     }
 
-    @Bean
-    @Override
-    public KeyGenerator keyGenerator() {
-        return (target, method, params) -> {
-            StringBuilder sb = new StringBuilder();
-            sb.append(target.getClass().getName());
-            sb.append(method.getName());
-            for (Object obj : params) {
-                if (obj != null) {
-                    sb.append(obj.toString().hashCode());
-                }
-            }
-            return sb.toString();
-        };
-    }
+
 
 
 }

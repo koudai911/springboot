@@ -15,24 +15,28 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <mybatis-plus>3.1.2</mybatis-plus>
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.study</groupId>-->
+<!--            <artifactId>cache</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.study</groupId>
+            <artifactId>base-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

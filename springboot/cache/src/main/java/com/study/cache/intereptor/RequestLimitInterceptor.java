@@ -1,9 +1,9 @@
 package com.study.cache.intereptor;
 
+import com.study.base.util.IpUtils;
 import com.study.cache.annotation.RequestLimit;
 import com.study.cache.annotation.RequestLimitType;
 import com.study.cache.handler.RedisHandler;
-import com.study.cache.util.IpUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang3.StringUtils;

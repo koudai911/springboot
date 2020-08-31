@@ -1,8 +1,8 @@
 package com.study.verifydemo.filter;
 
 
-import com.study.verifydemo.common.ResultMsg;
-import com.study.verifydemo.utils.ThreadLocalMapUtils;
+import com.study.base.common.ResultMsg;
+import com.study.base.util.ThreadLocalMapUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
