@@ -12,7 +12,7 @@ spring:
       max-request-size: 2024MB
       max-file-size: 10MB
   application:
-    name: elastic
+    name: elasticjob
 
   cloud:
     config:

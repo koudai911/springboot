@@ -27,7 +27,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     private MinioFeign minioFeign;
 
     @Override
-    @GlobalTransactional
+    @GlobalTransactional(name = "useradd",rollbackFor=RuntimeException.class)
     public ResultMsg add(User user) {
 
         int number = userMapper.insert(user);

@@ -1,0 +1,14 @@
+server:
+  port: 6040
+
+spring:
+  application:
+    name: zipkin
+
+zipkin:
+  serviceName: ${spring.application.name}
+  url: http://47.100.90.214:9411
+  connectTimeout: 6000
+  readTimeout: 6000
+  flushInterval: 1
+  compressionEnabled: true

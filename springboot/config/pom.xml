@@ -6,47 +6,31 @@
         <groupId>com.study</groupId>
         <artifactId>springboot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.study</groupId>
-    <artifactId>elasticjob</artifactId>
+    <artifactId>config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>elasticjob</name>
+    <name>config</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <mybatis-plus>3.1.2</mybatis-plus>
+
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.study</groupId>
-            <artifactId>base-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus}</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 

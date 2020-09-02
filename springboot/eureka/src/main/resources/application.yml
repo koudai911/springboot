@@ -1,0 +1,14 @@
+server:
+  port: 9000
+
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 3000
+    enable-self-preservation: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${EUREKA_INSTANCE_HOSTNAME:localhost}:${server.port}/eureka/
+  instance:
+    prefer-ip-address: true # \u4EE5IP\u5730\u5740\u6CE8\u518C\u5230\u670D\u52A1\u4E2D\u5FC3\uFF0C\u76F8\u4E92\u6CE8\u518C\u4F7F\u7528IP\u5730\u5740
