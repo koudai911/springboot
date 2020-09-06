@@ -3,6 +3,7 @@ package com.study.base.common;
 public enum ResultStatusCode {
     OK(200, "OK"),
     NO_DATA(402, "无数据"),
+    CHECK_NO_DATA(403, "查询无数据"),
     INVALID_PARAM(400, "参数不合法"),
     INVALID_AUTH(401, "用户权限不够"),
     SYSTEM_ERR(500, "系统错误"),

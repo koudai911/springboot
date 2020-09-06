@@ -30,6 +30,7 @@
             <module>zipkin</module>
             <module>minio</module>
             <module>seata</module>
+            <module>food</module>
       </modules>
 
     <dependencies>
