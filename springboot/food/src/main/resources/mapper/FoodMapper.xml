@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.food.mapper.FoodMapper">
+
+    <resultMap id="resultMap" type="com.study.food.vo.FoodVo">
+        <result column="id" property="id"></result>
+        <result column="name" property="name"></result>
+        <result column="type_name" property="typeName"></result>
+    </resultMap>
+
+    <select id="checkType" resultMap="resultMap">
+        SELECT
+            fn.id,
+            fn.name,
+            ft.name as type_name
+        from food_name fn
+        LEFT JOIN food_type ft on ft.id=fn.type_id
+        where fn.del_flag=0
+        <if test="null != type">
+            and ft.id=#{type}
+        </if>
+    </select>
+
+</mapper>

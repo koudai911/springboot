@@ -94,6 +94,13 @@ public class ResultMsg {
         return new ResultMsg(errorCode, errorMessage, data);
     }
 
+    public static ResultMsg createByErrorResultStatusCode(ResultStatusCode code, Object data) {
+        return new ResultMsg(code.getCode(), code.getMsg(), data);
+    }
+    public static ResultMsg createByErrorResultStatusCode(ResultStatusCode code) {
+        return new ResultMsg(code.getCode(), code.getMsg());
+    }
+
     public String toString() {
         JSONObject jo = JSONObject.fromObject(this);
         return jo.toString();
