@@ -10,18 +10,18 @@ spring:
     ssl: false
     lettuce:
       pool:
-        max-active: 8 #Á¬½Ó³Ø×î´óÁ¬½ÓÊı(Ê¹ÓÃ¸ºÖµ±íÊ¾Ã»ÓĞÏŞÖÆ) Ä¬ÈÏÎª8
-        max-idle: 8 # Á¬½Ó³ØÖĞµÄ×î´ó¿ÕÏĞÁ¬½Ó Ä¬ÈÏÎª8
-        min-idle: 0 #Á¬½Ó³ØÖĞµÄ×îĞ¡¿ÕÏĞÁ¬½Ó Ä¬ÈÏÎª 0
+        max-active: 8 #è¿æ¥æ± æœ€å¤§è¿æ¥æ•°(ä½¿ç”¨è´Ÿå€¼è¡¨ç¤ºæ²¡æœ‰é™åˆ¶) é»˜è®¤ä¸º8
+        max-idle: 8 # è¿æ¥æ± ä¸­çš„æœ€å¤§ç©ºé—²è¿æ¥ é»˜è®¤ä¸º8
+        min-idle: 0 #è¿æ¥æ± ä¸­çš„æœ€å°ç©ºé—²è¿æ¥ é»˜è®¤ä¸º 0
     timeout: 2000
     code-focus:
-      global-limit-count: 200  #´ÎÊı
-      global-limit-period-time: 1 #Ãë  µ¥Î»Ê±¼äÄÚµÄ´ÎÊı
-      global-limit-open: true #ÊÇ·ñ¿ªÆô·şÎñÏŞÁ÷
-      cache-config:  #»º´æÅäÖÃ
-        cache-null-values: true #ÊÇ·ñÔÊĞíÎªNull
-        cache-base-name: cache   #ÏîÄ¿Ãû³Æ,»º´ækeyµÄÇ°×º
-        split-code: '#'     #²ğ·Ö·ûºÏ
+      global-limit-count: 200  #æ¬¡æ•°
+      global-limit-period-time: 1 #ç§’  å•ä½æ—¶é—´å†…çš„æ¬¡æ•°
+      global-limit-open: true #æ˜¯å¦å¼€å¯æœåŠ¡é™æµ
+      cache-config:  #ç¼“å­˜é…ç½®
+        cache-null-values: true #æ˜¯å¦å…è®¸ä¸ºNull
+        cache-base-name: cache   #é¡¹ç›®åç§°,ç¼“å­˜keyçš„å‰ç¼€
+        split-code: '#'     #æ‹†åˆ†ç¬¦åˆ
         caffeine:
-          initial-capacity: 1  #³õÊ¼Öµ
-          maximum-size: 20  #×î´óÖµ
+          initial-capacity: 1  #åˆå§‹å€¼
+          maximum-size: 20  #æœ€å¤§å€¼
