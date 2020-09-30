@@ -6,7 +6,6 @@
         <groupId>com.study</groupId>
         <artifactId>springboot</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/>
     </parent>
 
     <groupId>com.stydy</groupId>
@@ -30,6 +29,8 @@
             <groupId>com.study</groupId>
             <artifactId>base-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+<!--            <scope>system</scope>-->
+<!--            <systemPath>E:/software/maven/repository/com/study/base-common/0.0.1-SNAPSHOT/base-common-0.0.1-SNAPSHOT.jar</systemPath>-->
         </dependency>
 
         <dependency>
@@ -76,8 +77,21 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.4.RELEASE</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
-
 </project>

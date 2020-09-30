@@ -1,28 +1,22 @@
 package com.study.food;
 
-import com.study.food.mapper.FoodMapper;
-import com.study.food.mapper.FoodTypeMapper;
 import com.study.food.model.Food;
-import com.study.food.model.FoodType;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.stereotype.Component;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootTest(classes = FoodApplication.class)
-@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = FoodApplication.class)
+//@RunWith(SpringRunner.class)
+@SpringBootTest
 public  class FoodApplicationTests {
 
-    @Autowired
-    private FoodMapper foodMapper;
+//    @Autowired
+//    private FoodMapper foodMapper;
 
-    @Autowired
-    private FoodTypeMapper foodTypeMapper;
+//    @Autowired
+//    private FoodTypeMapper foodTypeMapper;
 
     @Test
     public void contextLoads() {
@@ -39,7 +33,17 @@ public  class FoodApplicationTests {
 
         for (Food type : list) {
 //            foodTypeMapper.insert(type);
-            foodMapper.insert(type);
+//            foodMapper.insert(type);
         }
+    }
+    @Test
+    public void test() {
+        List<Food> list =new ArrayList<>();
+        System.out.println(System.getProperties());
+        int i=0;
+        while (true){
+            i++;
+            list.add(new Food(i,1));
+       }
     }
 }

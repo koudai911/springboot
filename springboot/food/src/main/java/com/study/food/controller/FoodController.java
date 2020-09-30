@@ -5,7 +5,6 @@ import com.study.base.common.ResultStatusCode;
 import com.study.food.mapper.FoodMapper;
 import com.study.food.mapper.FoodTypeMapper;
 import com.study.food.model.Food;
-import com.study.food.model.FoodType;
 import com.study.food.service.impl.FoodServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,14 +34,18 @@ public class FoodController {
 
     @RequestMapping("/checkType")
     public ResultMsg checkType(@RequestParam("type") Integer type){
-        if(null ==type) return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        if(null ==type){
+            return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        }
         return foodServiceImpl.checkType(type);
 
     }
 
     @RequestMapping("/updateOrDelete/count")
     public ResultMsg updateOrDeleteCount(@RequestParam("id") Integer id,@RequestParam("delFlag") Integer delFlag){
-        if(null ==id) return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        if(null ==id){
+            return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        }
         if(null ==delFlag){
             // 修改 菜名确定次数
             foodMapper.updateCount(id);

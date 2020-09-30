@@ -1,5 +1,5 @@
 server:
-  port: 7000
+  port: 6070
 
 
 # mysql 数据库

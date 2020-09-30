@@ -30,7 +30,9 @@ public class FoodServiceImpl implements FoodService {
 
     @Override
     public ResultMsg checkType(Integer type) {
-        if(null ==type) return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        if(null ==type){
+            return  ResultMsg.createByErrorResultStatusCode(ResultStatusCode.INVALID_PARAM,null);
+        }
         List<FoodVo> list = foodMapper.checkType(type);
         //随机获取集合中一个值
         if(CollectionUtils.isEmpty(list)){

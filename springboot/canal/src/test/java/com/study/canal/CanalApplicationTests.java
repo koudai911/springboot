@@ -4,10 +4,10 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CanalApplicationTests {
+public class CanalApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
         int one = 123456789;
         double two = 123456.789;
         String s = String.format("第一个参数：%,d 第二个参数：%,.3f", one, two);
