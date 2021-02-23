@@ -31,6 +31,7 @@
             <module>minio</module>
             <module>seata</module>
             <module>food</module>
+            <module>demo</module>
       </modules>
 
     <dependencies>

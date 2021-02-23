@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot/base-common/base-common.iml" filepath="$PROJECT_DIR$/springboot/base-common/base-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/cache/cache.iml" filepath="$PROJECT_DIR$/springboot/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/canal/canal.iml" filepath="$PROJECT_DIR$/springboot/canal/canal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/config/config.iml" filepath="$PROJECT_DIR$/springboot/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/demo/demo.iml" filepath="$PROJECT_DIR$/springboot/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/elasticjob/elasticjob.iml" filepath="$PROJECT_DIR$/springboot/elasticjob/elasticjob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/eureka/eureka.iml" filepath="$PROJECT_DIR$/springboot/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/food/food.iml" filepath="$PROJECT_DIR$/springboot/food/food.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/minio/minio.iml" filepath="$PROJECT_DIR$/springboot/minio/minio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/seata/seata.iml" filepath="$PROJECT_DIR$/springboot/seata/seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/verify-demo/verify-demo.iml" filepath="$PROJECT_DIR$/springboot/verify-demo/verify-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/springboot/zipkin/zipkin.iml" />
+    </modules>
+  </component>
+</project>
