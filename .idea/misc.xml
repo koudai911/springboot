@@ -7,8 +7,35 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/admin/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/base/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/base/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/base/base-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_service/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_web/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot/base-common/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/cache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/canal/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/base-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/base-common/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/base-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/base-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/edu_base/base-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/elasticjob/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/food/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/minio/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/seata/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/verify-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/zipkin/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

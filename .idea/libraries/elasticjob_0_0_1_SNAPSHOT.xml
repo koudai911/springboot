@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="elasticjob-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/target/elasticjob-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

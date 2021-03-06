@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springboot/base-common/base-common.iml" filepath="$PROJECT_DIR$/springboot/base-common/base-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/cache/cache.iml" filepath="$PROJECT_DIR$/springboot/cache/cache.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/canal/canal.iml" filepath="$PROJECT_DIR$/springboot/canal/canal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/config/config.iml" filepath="$PROJECT_DIR$/springboot/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/demo/demo.iml" filepath="$PROJECT_DIR$/springboot/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/elasticjob/elasticjob.iml" filepath="$PROJECT_DIR$/springboot/elasticjob/elasticjob.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/eureka/eureka.iml" filepath="$PROJECT_DIR$/springboot/eureka/eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/food/food.iml" filepath="$PROJECT_DIR$/springboot/food/food.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/minio/minio.iml" filepath="$PROJECT_DIR$/springboot/minio/minio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/seata/seata.iml" filepath="$PROJECT_DIR$/springboot/seata/seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/base_admin/base_admin.iml" filepath="$PROJECT_DIR$/springboot/edu_base/base_admin/base_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/base_common/base_common.iml" filepath="$PROJECT_DIR$/springboot/edu_base/base_common/base_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/base_config/base_config.iml" filepath="$PROJECT_DIR$/springboot/edu_base/base_config/base_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/base_eureka/base_eureka.iml" filepath="$PROJECT_DIR$/springboot/edu_base/base_eureka/base_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/base_gateway/base_gateway.iml" filepath="$PROJECT_DIR$/springboot/edu_base/base_gateway/base_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_service/cache_service/cache_service.iml" filepath="$PROJECT_DIR$/springboot/edu_service/cache_service/cache_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_service/canal_service/canal_service.iml" filepath="$PROJECT_DIR$/springboot/edu_service/canal_service/canal_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/demo_web/demo_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/demo_web/demo_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_base/edu_base.iml" filepath="$PROJECT_DIR$/springboot/edu_base/edu_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_service/edu_service.iml" filepath="$PROJECT_DIR$/springboot/edu_service/edu_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/edu_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/edu_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/elasticjob_service.iml" filepath="$PROJECT_DIR$/springboot/edu_service/elasticjob_service/elasticjob_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/food_web/food_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/food_web/food_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/minio_web/minio_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/minio_web/minio_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/seata_web/seata_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/seata_web/seata_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/verify-demo/verify-demo.iml" filepath="$PROJECT_DIR$/springboot/verify-demo/verify-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/springboot/zipkin/zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_service/verify_service/verify_service.iml" filepath="$PROJECT_DIR$/springboot/edu_service/verify_service/verify_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/edu_web/zipkin_web/zipkin_web.iml" filepath="$PROJECT_DIR$/springboot/edu_web/zipkin_web/zipkin_web.iml" />
     </modules>
   </component>
 </project>

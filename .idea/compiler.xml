@@ -6,50 +6,105 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-        <module name="minio" />
-        <module name="elasticjob" />
-        <module name="base-common" />
-        <module name="cache" />
-        <module name="zipkin" />
-        <module name="eureka" />
-        <module name="verify-demo" />
-        <module name="config" />
-        <module name="seata" />
-        <module name="food" />
-        <module name="canal" />
+        <module name="elasticjob_service" />
+        <module name="zipkin_web" />
+        <module name="minio_web" />
+        <module name="base_eureka" />
+        <module name="eureka (1)" />
+        <module name="seata_web" />
+        <module name="verify_service" />
+        <module name="base_config" />
+        <module name="base_admin" />
+        <module name="edu_base" />
+        <module name="edu_service" />
+        <module name="base_common" />
+        <module name="cache_service" />
+        <module name="edu_web" />
+        <module name="base_gateway" />
+        <module name="food_web" />
+        <module name="demo_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin" target="1.8" />
+      <module name="base" target="1.8" />
+      <module name="base-admin" target="1.8" />
       <module name="base-common" target="1.8" />
+      <module name="base-config" target="1.8" />
+      <module name="base-eureka" target="1.8" />
+      <module name="base-gateway" target="1.8" />
+      <module name="base-gateway (1)" target="1.8" />
+      <module name="base_admin" target="1.8" />
+      <module name="base_common" target="1.8" />
+      <module name="base_config" target="1.8" />
+      <module name="base_eureka" target="1.8" />
+      <module name="base_gateway" target="1.8" />
       <module name="cache" target="1.8" />
+      <module name="cache_service" target="1.8" />
       <module name="canal" target="1.8" />
       <module name="config" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="demo_web" target="1.8" />
+      <module name="edu_base" target="1.8" />
+      <module name="edu_service" target="1.8" />
+      <module name="edu_web" target="1.8" />
       <module name="elasticjob" target="1.8" />
+      <module name="elasticjob_service" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="eureka (1)" target="1.8" />
       <module name="food" target="1.8" />
+      <module name="food_web" target="1.8" />
       <module name="minio" target="1.8" />
+      <module name="minio_web" target="1.8" />
       <module name="seata" target="1.8" />
+      <module name="seata_web" target="1.8" />
       <module name="springboot" target="1.8" />
       <module name="verify-demo" target="1.8" />
+      <module name="verify-service" target="1.8" />
+      <module name="verify_service" target="1.8" />
       <module name="zipkin" target="1.8" />
+      <module name="zipkin_web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin" options="-parameters" />
+      <module name="base" options="-parameters" />
+      <module name="base-admin" options="-parameters" />
       <module name="base-common" options="-parameters" />
+      <module name="base-config" options="-parameters" />
+      <module name="base-eureka" options="-parameters" />
+      <module name="base-gateway" options="-parameters" />
+      <module name="base-gateway (1)" options="-parameters" />
+      <module name="base_admin" options="-parameters" />
+      <module name="base_common" options="-parameters" />
+      <module name="base_config" options="-parameters" />
+      <module name="base_eureka" options="-parameters" />
+      <module name="base_gateway" options="-parameters" />
       <module name="cache" options="-parameters" />
+      <module name="cache_service" options="-parameters" />
       <module name="canal" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="demo_web" options="-parameters" />
+      <module name="edu_base" options="-parameters" />
+      <module name="edu_service" options="-parameters" />
+      <module name="edu_web" options="-parameters" />
       <module name="elasticjob" options="-parameters" />
+      <module name="elasticjob_service" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="eureka (1)" options="-parameters" />
       <module name="food" options="-parameters" />
+      <module name="food_web" options="-parameters" />
       <module name="minio" options="-parameters" />
+      <module name="minio_web" options="-parameters" />
       <module name="seata" options="-parameters" />
+      <module name="seata_web" options="-parameters" />
       <module name="verify-demo" options="-parameters" />
+      <module name="verify-service" options="-parameters" />
+      <module name="verify_service" options="-parameters" />
       <module name="zipkin" options="-parameters" />
+      <module name="zipkin_web" options="-parameters" />
     </option>
   </component>
 </project>

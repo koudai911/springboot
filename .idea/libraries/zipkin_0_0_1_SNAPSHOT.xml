@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="zipkin-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/springboot/edu_web/zipkin_web/target/zipkin-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

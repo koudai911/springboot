@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="verify-demo-0.0.1-SNAPSHOT1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/springboot/edu_service/verify_service/target/verify-demo-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

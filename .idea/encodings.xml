@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/springboot/base-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/cache/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/canal/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/config/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/demo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/elasticjob/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/eureka/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/food/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/minio/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/seata/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/verify-demo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot/zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_base/base-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_base/base-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_base/base-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_base/base-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_service/cache_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_service/verify-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/demo_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/demo_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/food_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/food_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/minio_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/minio_web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/seata_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_web/seata_web/src/main/resources" charset="UTF-8" />
   </component>
 </project>
