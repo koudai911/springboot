@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/springboot/edu_base/base-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/edu_base/base-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/edu_base/base-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot/edu_base/base_gateway/src/main/resources/bootstrap.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/springboot/edu_service/cache_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/edu_service/elasticjob_service/src/main/resources" charset="UTF-8" />
