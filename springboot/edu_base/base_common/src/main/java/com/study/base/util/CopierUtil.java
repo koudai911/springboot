@@ -26,8 +26,9 @@ public class CopierUtil {
      * @return 目标对象
      */
     public static <T, M> T copyProperties(M source, Class<T> clazz) {
-        if (Objects.isNull(source) || Objects.isNull(clazz))
+        if (Objects.isNull(source) || Objects.isNull(clazz)) {
             throw new IllegalArgumentException();
+        }
         return copyProperties(source, clazz, null);
     }
 

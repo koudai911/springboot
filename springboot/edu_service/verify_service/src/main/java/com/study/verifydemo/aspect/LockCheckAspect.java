@@ -4,7 +4,7 @@ import com.study.base.exception.CommonException;
 import com.study.base.util.ThreadLocalMapUtils;
 import com.study.verifydemo.annotation.CacheLock;
 import com.study.verifydemo.filter.TenantFilter;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

@@ -34,8 +34,9 @@ public class ZipCompressor {
     }
     public void compress(String srcPathName) {
         File file = new File(srcPathName);
-        if (!file.exists())
+        if (!file.exists()) {
             throw new RuntimeException(srcPathName + "不存在！");
+        }
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(zipFile);
             CheckedOutputStream cos = new CheckedOutputStream(fileOutputStream,

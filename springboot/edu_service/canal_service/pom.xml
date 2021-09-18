@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>com.study</groupId>
-            <artifactId>base-common</artifactId>
+            <artifactId>base_common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--  canal-->

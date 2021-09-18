@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>com.study</groupId>
-            <artifactId>base-common</artifactId>
+            <artifactId>base_common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -67,6 +67,15 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${com.alibaba.druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
         </dependency>
     </dependencies>
 

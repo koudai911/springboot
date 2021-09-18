@@ -60,7 +60,7 @@
 
         <dependency>
             <groupId>com.study</groupId>
-            <artifactId>base-common</artifactId>
+            <artifactId>base_common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -110,6 +110,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
         </dependency>
 
     </dependencies>

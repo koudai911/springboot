@@ -2,7 +2,7 @@ package com.study.seata.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
-import com.alibaba.druid.support.http.WebStatFilter;
+import com.study.seata.filter.Test1Filter;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,7 +68,7 @@ public class DruidConfig {
     @Bean    //监控
     public FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
-        filterRegistrationBean.setFilter(new WebStatFilter());
+        filterRegistrationBean.setFilter(new Test1Filter());
         //所有请求进行监控处理
         filterRegistrationBean.addUrlPatterns("/*");
         //排除
